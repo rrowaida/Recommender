@@ -6,7 +6,10 @@
 
   
   
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head><body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#000000" link="#000000" vlink="#000000">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head><body style="color: rgb(0, 0, 0); background-color: rgb(253, 255, 254); margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;" alink="#000000" link="#000000" vlink="#000000">
 <table border="0" width="100%">
 
   <tbody>
@@ -37,7 +40,7 @@
 
 
 <hr noshade="noshade">
-<b><font color="#005128">Project Outline:</font></b> The objective of this project is to study how to implement a real time recommendation system works. Making an efficient recommendation system involves handling a lot of data at a time. It takes a lot of computation to figure out the relevant data and make a decision out of them. Making a real time recommendation system is even harder. Parallel computing is a way of making the computation faster so that the system can produce real time output. Therefore, this project will make a real time recommendation system for movies. 
+<b><font color="#005128">Project Outline:</font></b> The focus of this study is to find a high performing algorithm to construct a recommendation system for movies. Recommendation system is an important business tool for today's fast growing data driven world. All online service based companies like Youtube, Netflix, Spotify are sustaining because of their huge user based. These vast variety of users are continuously interacting with these systems to get their desired items. As the system grows, the number of users and the number of items grows too. A very efficient way to keep a user engaged to the system is to guide the user to an item that s/he will appreciate. That is why all these big companies invest a lot of research work to develop an appropriate recommendation system. But building a well performing recommendation is challenging. Big systems have huge collection of items and users. So recommendation system needs to be capable of dealing with a huge data collection. But the recommendation algorithm is expected to work in real time. Unless the recommendation system works in real time, it will not be able to keep a user continuously engaged with the system. Sequential calculation is not suitable for processing this huge collection of user-item data. Parallel computing is essential to develop a fast working recommendation system. This project developed a movie recommendation system that works in a multi-core parallel environment and able to recommend a suitable movie to it's user in real time. A special class of recommendation algorithm named Collaborative Filtering (CF) is used to develop this project. The recommendation application runs on Apache Spark framework. Project used MovieLens ml-100K dataset. It achieved satisfactory performance
 <p><b><font color="#005128">Startup Paper(s):</font></b> 
 
 	<ul>
@@ -70,9 +73,79 @@ Paper</font></a> (PDF file created from LATEX template)</div>
 
 <p><b><font color="#005128">Relevant References:</font></b></p>
 
-<ul>
+<ol>
+         <li>
+            <p>H. Zarzour, Z. Al-Sharif, M. Al-Ayyoub, and Y. Jararweh, <cite>A new collaborative filtering recommendation algorithm based on dimensionality reduction and clustering techniques</cite>, 2018 9th International Conference on Information and Communication Systems (ICICS), pages 102-10, ISSN 2573-3346, April, 2018.</p>
+         <a href="https://ieeexplore.ieee.org/document/8355449"> Link here</a>
+		 </li>
+         <li>
+            <p>J. Zhang, Y. Wang, Z. Yuan, and Q. Jin, <cite>Personalized Real-Time Movie Recommendation System:
+Practical Prototype and Evaluation</cite>, Tsinghua Science and Technology, vol. 25, no. 2, pages 180-191, April 2020</p>
+         <a href="https://ieeexplore.ieee.org/document/8821512"> Link here</a>
+		 </li>
+		 <li>
+            <p>B. Kupisz and O. Unold, <cite>Collaborative filtering recommendation algorithm based on Hadoop and Spark</cite>, 2015 IEEE International Conference on Industrial Technology (ICIT), Seville, pages. 1510-1514, 2015.</p>
+         <a href="https://ieeexplore.ieee.org/abstract/document/7125310"> Link here</a>
+		 </li>
+		 <li>
+            <p>S. Saravanan, <cite>Design of large-scale Content-based recommender system using hadoop MapReduce framework</cite>,
+			2015 Eighth International Conference on Contemporary Computing (IC3), Noida, pages 302-307, 2015.</p>
+         <a href="https://ieeexplore.ieee.org/document/7346697"> Link here</a>
+		 </li>
+		 <li>
+            <p>Y. Zhou , D. Wilkinson, R. Schreiber, R. Pan, <cite>Large-Scale Parallel Collaborative Filtering for the Netflix Prize</cite>,
+			Fleischer R., Xu J. (eds) Algorithmic Aspects in Information and Management. AAIM 2008 Lecture Notes in Computer Science, vol 5034. Springer, Berlin, Heidelberg. 2008.</p>
+			<a href="https://link.springer.com/chapter/10.1007/978-3-540-68880-8_32"> Link here</a>
+		 </li>
+		 <li>
+            <p>K. Atasu, T. P. Parnell, C.e Dünner, M. Vlachos, H. Pozidis, <cite>High-Performance Recommender System Training Using Co-Clustering on CPU/GPU Clusters</cite>,
+			2017 46th International Conference on Parallel Processing (ICPP), pages=372-381, 2017.</p>
+			<a href="https://ieeexplore.ieee.org/document/8025311"> Link here</a>
+         </li>
+		 <li>X. Tu, S. Liu and R. Li;
+		<p>Improving matrix factorization recommendations for problems in big data,
+		<cite>2017 IEEE 2nd International Conference on Big Data Analysis (ICBDA)</cite>, Beijing, pages 193-197, 2017.</p>
+		<a href="https://ieeexplore.ieee.org/document/8078806"> Link here</a>
+		</li>
+		<li><p>Y. Azar, A. Nisgav, B. Patt-Shamir;
+		<cite>Recommender systems with non-binary grades,
+		</cite>SPAA '11 Proceedings of the twenty-third annual ACM symposium on Parallelism in algorithms and architectures
+		Pages 245-252, June 04 - 06, 2011.
+		</p>
+		<a href="https://dl.acm.org/citation.cfm?id=1989493.1989528"> Link here</a>
+		</li>
+		<li><p>A. Al-Doulat;
+		<cite>Surprise and Curiosity in A Recommender System,
+		</cite>2018 IEEE/ACS 15th International Conference on Computer Systems and Applications (AICCSA), Aqaba, pages 1-2, 2018.
+		</p>
+		<a href="https://ieeexplore.ieee.org/document/8612897"> Link here</a>
+		</li>
+		<li><p>S. Jain, A. Grover, P. S. Thakur and S. K. Choudhary;
+		<cite>Trends, problems and solutions of recommender system,
+		</cite>International Conference on Computing, Communication & Automation, Noida, pages 955-958, 2015.
+		</p>
+		<a href="https://ieeexplore.ieee.org/abstract/document/7148534"> Link here</a>
+		</li>
+		<li><p>G. Wei-wei and L. Feng;
+		<cite>Application Research of Hadoop's Weibo Recommendation System Prototype Based on Customer Dynamic Behavior,
+		</cite>2018 3rd International Conference on Smart City and Systems Engineering (ICSCSE), Xiamen, China, pages 562-566, 2018.
+		</p>
+		<a href="https://ieeexplore.ieee.org/document/8705495"> Link here</a>
+		</li>
 
-  <li>list all relevant papers and include links to their PDF files</li>
-</ul>
+		<li><p>C. Diedhiou, B. Carpenter, A. Shafi, S. Sarkar, R. Esmeli and R. Gadsdon;
+		<cite>Performance Comparison of a Parallel Recommender Algorithm Across Three Hadoop-Based Frameworks,
+		</cite>2018 30th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD), Lyon, France, pages 380-387, 2018.
+		</p>
+		<a href="https://ieeexplore.ieee.org/abstract/document/8645926"> Link here</a>
+		</li>
 
+		<li><p>J. Lund and Y. Ng;
+		<cite>Movie Recommendations Using the Deep Learning Approach, 
+		</cite>2018 IEEE International Conference on Information Reuse and Integration (IRI), Salt Lake City, UT, pages 47-54, 2018.
+		</p>
+		<a href="https://ieeexplore.ieee.org/document/8424686"> Link here</a>
+		</li>
+		</ul>
+      </ol>
 </body></html>
