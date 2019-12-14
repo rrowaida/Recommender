@@ -1,0 +1,6 @@
+Apache Spark Version := "2.4.4"
+scalaVersion := "2.11.12"
+To create .jar file use the 'simple.sbt'
+To run in ScalaSDK use the 'pom.xml' dependency list
+For dataset use ml-100K standend MovieLens data
+
